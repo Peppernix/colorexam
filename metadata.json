@@ -1,0 +1,5 @@
+{
+  "name": "Chromatic Illusion Lab",
+  "description": "A professional React application for researching chromatic induction and simultaneous contrast visual illusions. Features configurable HSL/Lab color space experimental designs, trial generation, and data export.",
+  "requestFramePermissions": []
+}
