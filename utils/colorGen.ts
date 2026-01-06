@@ -128,7 +128,7 @@ export const DEFAULT_CONFIG: ExperimentConfig = {
   randomizeOrder: true,
   target: {
     mode: 'HSL',
-    h: { value: 0, start: 0, end: 360, steps: 4, isRange: true, listValues: [], mappingValues: [] }, // Range Mode
+    h: { value: 0, start: 0, end: 330, steps: 12, isRange: true, listValues: [], mappingValues: [] }, // Range Mode
     s: { value: 0, start: 0, end: 0, steps: 0, isRange: false, listValues: [20, 50, 60], mappingValues: [] }, // List Mode
     l: { value: 0, start: 0, end: 0, steps: 0, isRange: false, listValues: [30, 50], mappingValues: [] }, // List Mode
   },
@@ -138,7 +138,7 @@ export const DEFAULT_CONFIG: ExperimentConfig = {
     h: { value: 0, start: 0, end: 0, steps: 0, isRange: false, listValues: [60, 120, 180], mappingValues: [] }, 
     // Saturation is Mapping (Values relative to Target S default [20, 50, 60])
     s: { value: 0, start: 0, end: 0, steps: 0, isRange: false, listValues: [], 
-         mappingValues: [{ target: 20, value: 80 }, { target: 50, value: 50 }, { target: 60, value: 40 }] }, 
+         mappingValues: [{ target: 20, value: 80 }, { target: 50, value: 50 }, { target: 60, value: 30 }] }, 
     // Lightness is Mapping (Values relative to Target L default [30, 50])
     l: { value: 0, start: 0, end: 0, steps: 0, isRange: false, listValues: [], 
          mappingValues: [{ target: 30, value: 70 }, { target: 50, value: 50 }] },
@@ -146,8 +146,8 @@ export const DEFAULT_CONFIG: ExperimentConfig = {
   backgroundB: {
     mode: 'HSL',
     // Unchanged - Classic controls
-    h: { value: 60, start: 0, end: 360, steps: 1, isRange: false, listValues: [], mappingValues: [] }, 
-    s: { value: 30, start: 0, end: 100, steps: 1, isRange: false, listValues: [], mappingValues: [] },
-    l: { value: 80, start: 0, end: 100, steps: 1, isRange: false, listValues: [], mappingValues: [] }, 
+    h: { value: 200, start: 0, end: 360, steps: 1, isRange: false, listValues: [], mappingValues: [] }, 
+    s: { value: 10, start: 0, end: 100, steps: 1, isRange: false, listValues: [], mappingValues: [] },
+    l: { value: 78, start: 0, end: 100, steps: 1, isRange: false, listValues: [], mappingValues: [] }, 
   },
 };
